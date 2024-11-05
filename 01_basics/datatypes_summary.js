@@ -32,3 +32,26 @@ console.log(typeof myfunction)
 console.log(typeof heros)
 
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//**************Memory*************/
+
+// Stack(Primitive), Heap(Non-Primitive)
+
+let myName="sandy"
+let anotherName=myName
+anotherName="sunny"
+
+console.log(myName)
+console.log(anotherName)
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo=userOne
+userTwo.email="sandy@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
