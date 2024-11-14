@@ -44,11 +44,25 @@ const users=[
     email:'sandy@gmail.com'
 }
 ]
-//users[1].email
+users[1].email
 
-console.log(tinderUser)
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
+//console.log(tinderUser)
+//console.log(Object.keys(tinderUser))
+//console.log(Object.values(tinderUser))
+//console.log(Object.entries(tinderUser))
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+//console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+//destructuring
+const course={
+    coursename:'js in hindi',
+    price:'999',
+    courseInstructor:'sandyy'
+}
+//course.courseInstructor
+
+//const{courseInstructor}=course //course is an object and courseInstuctor is a value extractor
+//console.log(courseInstructor)
+
+const{courseInstructor:instuctor}=course // here courseInstructor can be used as instuctor, this is called object disstructor
+console.log(instuctor)
