@@ -3,7 +3,7 @@
 
 //object Literals
 
-const mySym=Symbol("key1") //key1 is declared as Symbol
+/*const mySym=Symbol("key1") //key1 is declared as Symbol
 
 const JsUser={
     name: "sandy",
@@ -23,6 +23,11 @@ console.log(JsUser[mySym])
 
 JsUser.email='chat@gmail.com'
 console.log(JsUser.email) //use to freeze the object. Now value of email will not change further
-Object.freeze(JsUser)
+//Object.freeze(JsUser)
 JsUser.email='test@gmail.com'
-console.log(JsUser)
+console.log(JsUser) */
+
+JsUser.greeting=function(){
+    console.log('Hello Js User')
+}
+console.log(JsUser.greeting())
