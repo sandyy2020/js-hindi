@@ -66,3 +66,16 @@ const course={
 
 const{courseInstructor:instuctor}=course // here courseInstructor can be used as instuctor, this is called object disstructor
 console.log(instuctor)
+
+//********json format */
+//{
+//    'name':'sandy',
+//    'coursename':'js in hindi ,
+//    'price':'free'
+//}
+
+//[
+//    {},
+//    {}
+//]
+//Both above are in json format
