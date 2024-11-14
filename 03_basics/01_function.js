@@ -30,4 +30,35 @@ function addTwoNumbers(num1,num2){    //num1,num2 are parameter
     return `${username} just logged in`
  }
  //console.log(loginUserMessage("sandy"))
- console.log(loginUserMessage())
+ //console.log(loginUserMessage())
+
+ function calculateCartPrice(...num1){  //here ... is rest operator
+    return num1
+ }
+ //console.log(calculateCartPrice(200,400,500,2000))
+
+ /////********Object is pass through function****/
+ const user={
+    username:'sandy',
+    price:99
+ }
+
+ function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+ }
+
+ //handleObject(user)
+ handleObject({
+    username:'sam',
+    price:49
+ })
+
+ ////*******Array is passed through function *****/
+ const myNewArray=[200,300,400]
+
+ function returnSecondValue(getArray){
+    return getArray[1]
+ }
+ 
+ //console.log(returnSecondValue(myNewArray))
+ console.log(returnSecondValue([500,750,200]))
