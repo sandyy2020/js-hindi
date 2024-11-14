@@ -8,7 +8,7 @@ const mySym=Symbol("key1") //key1 is declared as Symbol
 const JsUser={
     name: "sandy",
     'full name':'sandy s',
-    [mySym]:"mykey1",
+    [mySym]:"mykey1", // [] is used to accessed symbol
     email:"sandy@gmail.com",
     isLoggedIn:false,
     lastLoginDays: ['Monday','Saturday']
