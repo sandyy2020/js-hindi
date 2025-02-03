@@ -79,3 +79,15 @@ console.log(instuctor)
 //    {}
 //]
 //Both above are in json format
+
+const username={
+    name:"sandeep",
+    email:"sandeep@google.com"
+}
+const userdetails={
+    address:"New Delhi",
+    pin:11096
+}
+
+const objj={...username,...userdetails} //... is used as spread operator in object od username and userdetails
+console.log(objj)
