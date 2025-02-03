@@ -80,6 +80,7 @@ console.log(instuctor)
 //]
 //Both above are in json format
 
+//spread operator(...obj)
 const username={
     name:"sandeep",
     email:"sandeep@google.com"
@@ -91,3 +92,14 @@ const userdetails={
 
 const objj={...username,...userdetails} //... is used as spread operator in object od username and userdetails
 console.log(objj)
+
+//object disstructor 
+const state={
+    bihar:"nitesh",
+    haryana:"nayabsingh"
+}
+console.log(state.haryana)
+console.log(state['bihar'])
+
+const{haryana:har}=state // here haryana can be used as har, this is called object disstructor
+console.log(har)
