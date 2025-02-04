@@ -30,6 +30,7 @@ for(const key of map){
 
 //map is used for unique value, duplicate value is not shown 
 //the result of map is shown in same order as it is written
+// check map documentation
 
 for(const [key,value] of map){
     console.log(key,':-',value);
