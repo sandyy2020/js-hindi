@@ -28,9 +28,14 @@ const books=[
     {
         title:'Book Four', genre:'Science', publish:2009,edition:2014
     },
+    {
+        title:'Book Five', genre:'Science', publish:2011,edition:2016
+    },
 ]
 
-let userBooks=books.filter((bk)=>bk.genre=='Science')
+let userBooks=books.filter((bk)=>bk.genre==='Science')
 // userBooks=books.filter((bk)=>bk.publish>=2005)
-userBooks=books.filter((bk)=>{return bk.publish>=2010})  //return is used
+userBooks=books.filter((bk)=>{
+    return bk.publish>=1990 && bk.genre==='Science' //return is used
+})  
 console.log(userBooks);
