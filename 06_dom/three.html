@@ -14,6 +14,14 @@
     div.className="main"
     div.id=Math.round(Math.random()*10+1)
     div.setAttribute("title","generated title")
+    div.style.backgroundColor="green"
+    div.style.padding="12px"
+    // div.innerText="Abra ka Dabra"
+    
+    const addText=document.createTextNode("chai and code")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
 
     // const h1=document.createElement('h1')
     // console.log(h1);
